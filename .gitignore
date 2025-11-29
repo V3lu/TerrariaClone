@@ -1,0 +1,5 @@
+/.vs
+/Libraries
+/Libraries/include
+/Libraries/include/GLFW
+/SFML-3.0.2

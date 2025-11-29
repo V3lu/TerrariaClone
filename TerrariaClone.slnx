@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TerrariaClone.vcxproj" Id="4a0ec33b-682a-4ffd-b1f1-6c0640063dde" />
+</Solution>
