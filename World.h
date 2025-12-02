@@ -7,5 +7,5 @@ class World
 public:
 	std::vector<Chunk> chunks;
 
-	void InitializeWorld(int numChunks, int chunkWidth);
+	void InitializeWorld(int numChunks);
 };

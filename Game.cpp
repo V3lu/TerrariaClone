@@ -4,5 +4,6 @@
 
 void Game::InitializeGame()
 {
-
+	World world;
+	world.InitializeWorld(20);
 }

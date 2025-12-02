@@ -102,18 +102,6 @@ int main()
 	VBO1.Unbind();
 	EBO1.Unbind();
 
-	sf::Texture texture;
-	if (!texture.loadFromFile("Textures/WorldTextures.png")) {
-		// Handle error
-	}
-	GLuint texID = texture.getNativeHandle();
-	glGenTextures(1, &texID);
-	glBindTexture(GL_TEXTURE_2D, texID);
-
-
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
 	while (window.isOpen()) 
 	{
 		while (const std::optional event = window.pollEvent())

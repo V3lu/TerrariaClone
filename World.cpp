@@ -1,10 +1,10 @@
 #include "World.h"
 
-void World::InitializeWorld(int numChunks, int chunkWidth)
+void World::InitializeWorld(int numChunks)
 {
 	for (int i = 0; i < numChunks; i++) {
-		Chunk chunk(chunkWidth);
-		World::chunks.emplace_back(chunk);
+		Chunk chunk;
+		World::chunks.push_back(chunk);
 	}
 }
 
