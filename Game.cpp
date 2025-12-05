@@ -2,8 +2,8 @@
 #include "Game.h"
 #include "Chunk.h"
 
-void Game::InitializeGame()
+void Game::InitializeGame(int numChunks)
 {
 	World world;
-	world.InitializeWorld(20);
+	world.InitializeWorld(numChunks);
 }

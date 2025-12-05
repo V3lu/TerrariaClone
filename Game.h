@@ -1,14 +1,15 @@
 #pragma once
 
+enum State
+{
+	LOAD,
+	PLAY,
+	END
+};
+
 class Game
 {
 public:
-	enum State
-	{
-		LOAD,
-		PLAY,
-		END
-	};
-
-	void InitializeGame();
+	State state;
+	void InitializeGame(int numChunks);
 };

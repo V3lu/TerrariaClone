@@ -9,6 +9,7 @@
 #include "VBO.h"
 #include "VAO.h"
 #include "EBO.h"
+#include "Game.h"
 
 using namespace std;
 
@@ -101,6 +102,10 @@ int main()
 	VAO1.Unbind();
 	VBO1.Unbind();
 	EBO1.Unbind();
+
+	Game game;
+	game.InitializeGame(20);
+	game.state = LOAD;
 
 	while (window.isOpen()) 
 	{
